@@ -1,0 +1,12 @@
+package com.swe.testapp;
+
+public class Writer{
+	
+	public Writer(){
+
+	}
+
+	public String write(){
+		return "Hello, World!";
+	}
+}
