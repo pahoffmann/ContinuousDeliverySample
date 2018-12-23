@@ -1,8 +1,10 @@
 node {
         stage('Build') {
+        	sh 'cd TestApp'
             sh 'mvn -B -DskipTests clean package'
         }
-        stage('Test') { 
+        stage('Test') {
+        	sh 'cd TestApp' 
             sh 'mvn test' 
         }
 }
