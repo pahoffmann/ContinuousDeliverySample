@@ -6,6 +6,6 @@ node {
         	sh 'cd TestApp && mvn test' 
         }
         stage('Deploy') {
-        	sh 'rm -r /home/patrick/UniOsnabrueck/SeminarSoftwareEngineering/Git/ContinuousDeliverySample/TestApp/target/* && cp -r target/*  /home/patrick/UniOsnabrueck/SeminarSoftwareEngineering/Git/ContinuousDeliverySample/TestApp/target/.'
+        	sh 'rm -r /home/patrick/UniOsnabrueck/SeminarSoftwareEngineering/Git/ContinuousDeliverySample/TestApp/target/* && cp -r TestApp/target/*  /home/patrick/UniOsnabrueck/SeminarSoftwareEngineering/Git/ContinuousDeliverySample/TestApp/target/.'
         }
 }
