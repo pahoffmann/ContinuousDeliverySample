@@ -1,1 +1,6 @@
 aa
+
+stage('Deploy') {
+        	sh 'rm -r /home/patrick/UniOsnabrueck/SeminarSoftwareEngineering/Git/ContinuousDeliverySample/TestApp/target/* && cp -r TestApp/target/*  /home/patrick/UniOsnabrueck/SeminarSoftwareEngineering/Git/ContinuousDeliverySample/TestApp/target/.'
+        }
+}

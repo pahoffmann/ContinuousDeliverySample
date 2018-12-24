@@ -5,7 +5,7 @@ node {
         stage('Test') {
         	sh 'cd TestApp && mvn test' 
         }
-        stage('Deploy') {
-        	sh 'rm -r /home/patrick/UniOsnabrueck/SeminarSoftwareEngineering/Git/ContinuousDeliverySample/TestApp/target/* && cp -r TestApp/target/*  /home/patrick/UniOsnabrueck/SeminarSoftwareEngineering/Git/ContinuousDeliverySample/TestApp/target/.'
+        stage('Execute') {
+        	sh 'java -cp TestApp/target/TestApp-1.0-SNAPSHOT.jar com.swe.testapp.App'
         }
-}
+}        
